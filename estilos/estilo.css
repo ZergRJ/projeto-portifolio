@@ -1,0 +1,107 @@
+@charset "UTF-8";
+
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family: Arial, sans-serif;
+}
+
+body {
+  display: flex;
+}
+
+/* BOTÃO HAMBURGUER */
+
+.menu-btn {
+  display: none;
+  position: fixed;
+  top: 15px;
+  left: 15px;
+  font-size: 26px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  z-index: 1001;
+}
+
+/* MENU */
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 220px;
+  height: 100vh;
+  background: #0f0f0f;
+  color: white;
+  padding: 60px 20px 20px;
+  transition: transform 0.3s ease;
+}
+
+.logo {
+  margin-bottom: 30px;
+}
+
+.sidebar nav a {
+  display: block;
+  color: white;
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 6px;
+}
+
+.sidebar nav a:hover {
+  background: #272727;
+}
+
+/* CONTEÚDO */
+.content {
+  flex: 1;
+  min-height: 100vh;
+  background: url("../imagens/projeto.2.jpg") no-repeat center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.content-text h1 {
+  font-size: clamp(2rem, 5vw, 3.5rem);
+  margin-bottom: 10px;
+  color: green;
+  font-weight: bold;
+}
+
+.content-text p {
+  font-size: clamp(1rem, 2.5vw, 1.3rem);
+  color: green;
+  font-weight: bold;
+}
+
+/* 📱 MOBILE */
+@media (max-width: 768px) {
+  body {
+    flex-direction: column;
+  }
+
+  .menu-btn {
+    display: block;
+    color: green;
+  }
+
+  .sidebar {
+    transform: translateX(-100%);
+    z-index: 1000;
+  }
+
+  .sidebar.active {
+    transform: translateX(0);
+  }
+
+  .content {
+    margin-left: 0;
+    padding-top: 60px;
+  }
+}
