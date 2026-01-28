@@ -7,6 +7,10 @@ box-sizing: border-box;
 font-family: Arial, sans-serif;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   display: flex;
 }
@@ -57,27 +61,64 @@ body {
 
 /* CONTEÚDO */
 .content {
-  flex: 1;
-  min-height: 100vh;
-  background: url("../imagens/projeto.2.jpg") no-repeat center;
-  background-size: cover;
+  height: 100vh;
+  background: url("../imagens/projeto.2.jpg") no-repeat center / cover;
+  border: 1px solid black;
+  box-shadow: 1px 1px 5px black;
+}
+
+.content-text {
+  margin-left: 100px;
+  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
 }
 
-.content-text h1 {
-  font-size: clamp(2rem, 5vw, 3.5rem);
-  margin-bottom: 10px;
-  color: green;
+.texto-intro {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50% , -50%);
+  width: 320px;
+  max-width: 100%;
+  text-align: center;
   font-weight: bold;
+  font-size: 30px;
 }
 
-.content-text p {
-  font-size: clamp(1rem, 2.5vw, 1.3rem);
-  color: green;
-  font-weight: bold;
+.projects {
+  margin-left: 220px;
+  min-height: 100vh;
+  padding: 80px;
+  display: flex;
+  gap: 30px;
+}
+
+.cards {
+  flex: 1;
+  background: #f2f2f2;
+  padding: 20px;
+  border-radius: 12px;
+}
+
+.about-me {
+  background: url("../imagens/projeto.2.jpg") no-repeat center / cover;
+  border: 1px solid black;
+  box-shadow: 1px 1px 5px black;
+  min-height: 100vh;
+}
+
+.sobre {
+  margin-left: 300px;
+}
+
+.sobre img {
+  border-radius: 50%;
+  height: 200px;
+  width: 200px;
+  padding: 10px;
 }
 
 /* 📱 MOBILE */
@@ -103,5 +144,22 @@ body {
   .content {
     margin-left: 0;
     padding-top: 60px;
+  }
+
+  .content-text{
+    margin-left: 0;
+  }
+
+  .cards{
+    margin-left: 0px;
+  }
+
+  .projects {
+    flex-direction: column;
+    margin: 0;
+  }
+  
+  .sobre {
+    margin: 0;
   }
 }
