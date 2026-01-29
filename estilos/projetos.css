@@ -1,0 +1,32 @@
+@charset "UTF-8";
+/* PROJETOS */
+#projects{
+  min-height: 100vh;
+}
+
+.projetos {
+  margin-left: 100px;
+  min-height: 100vh;
+  padding: 20px;
+  display: flex;
+  gap: 30px;
+}
+
+.cards {
+  border: 1px solid black;
+  box-shadow: 1px 1px 5px black;
+  flex: 1;
+  background: #f2f2f2;
+  padding: 20px;
+  border-radius: 12px;
+  text-align: center;
+}
+
+.cards img {
+  border: 1px solid black;
+  box-shadow: 1px 1px 5px black;
+  background-color: #272727;
+  margin: 20px;
+  height: 250px;
+  width: 350px;
+}

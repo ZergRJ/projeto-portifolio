@@ -1,0 +1,50 @@
+@charset "UTF-8";
+/* CONTEÚDO */
+#content {
+  flex: 1;
+  display: block;
+  margin-left: 100px;
+  min-height: 100vh;
+  height: auto;
+  background: url("../imagens/projeto.2.jpg") no-repeat center / cover;
+  border: 1px solid black;
+  box-shadow: 1px 1px 5px black;
+}
+
+.content-text {
+  min-height: 100vh;
+}
+
+.texto-intro {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50% , -50%);
+  width: 320px;
+  max-width: 100%;
+  text-align: center;
+  font-weight: bold;
+  font-size: 30px;
+}
+
+#about .sobre{
+  margin-left: 198px;
+  line-height: 1.5rem;
+}
+
+.sobre img {
+  border-radius: 50%;
+  height: 200px;
+  width: 200px;
+  padding: 10px;
+}
+
+.about-me {
+  background: url("../imagens/Escritorio.jpg") no-repeat center / cover ;
+  border: 1px solid black;
+  box-shadow: 1px 1px 5px black;
+  min-height: 100vh;
+}
+
+
+

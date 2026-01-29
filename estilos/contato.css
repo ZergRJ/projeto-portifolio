@@ -1,0 +1,60 @@
+@charset "UTF-8";
+/* CONTATO */
+#contato {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  line-height: 1.5;
+  text-align: center;
+}
+
+.form {
+  color: white;
+  background: #272727;
+  border: 1px solid black;
+  border-radius: 20px;
+  height: 500px;
+  width: 500px;
+}
+
+.form h2 {
+  color: white;
+  margin-top: 30px;
+}
+
+.campo {
+  padding: 10px;
+  font-weight: bold;
+  border-radius: 20px;
+  width: 100%;
+  width: 320px
+}
+
+.btn {
+  margin: 10px;
+  height: 30px;
+  width: 80px;
+  font-weight: bold;
+  border-radius: 20px;
+}
+
+.area {
+  font-weight: bold;
+  height: 70px;
+  width: 100%;
+  width: 320px;
+}
+
+.outros {
+  color: white;
+  padding: 20px;
+  line-height: 1.5;
+}
+
+.outros img {
+  margin-top: 20px;
+  width: 60px;
+  border-radius: 50%;
+  padding: 5px;
+}

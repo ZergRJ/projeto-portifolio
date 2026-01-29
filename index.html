@@ -5,6 +5,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Menu Responsivo</title>
   <link rel="stylesheet" href="estilos/estilo.css">
+  <link rel="stylesheet" href="estilos/contato.css">
+  <link rel="stylesheet" href="estilos/content.css">
+  <link rel="stylesheet" href="estilos/menu.css">
+  <link rel="stylesheet" href="estilos/button.css">
+  <link rel="stylesheet" href="estilos/mobile.css">
+  <link rel="stylesheet" href="estilos/projetos.css">
   <link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon">
 </head>
 <body>
@@ -14,11 +20,11 @@
 
   <!-- MENU -->
   <aside class="sidebar">
-    <h2 class="logo">MeuPortfólio</h2>
+    <h2 class="logo">Meu Portfólio</h2>
     <nav>
       <a href="#content">🏠 Início</a>
       <a href="#projects">💼 Projetos</a>
-      <a href="#sobre">👤 Sobre</a>
+      <a href="#about">👤 Sobre</a>
       <a href="#contato">📞 Contato</a>
     </nav>
   </aside>
@@ -31,25 +37,28 @@
             <p>Este é meu portfólio de apresentação.</p>
         </div>
     </section>
-
-    <section class="projects" id="projects">
+    <!-- Projetos -->
+    <section class="projetos" id="projects">
         <div class="cards">
             <h2>Meus Projetos</h2>
+            <img src="imagens/maserati.jpg" alt="">
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae inventore optio facere, voluptatibus voluptate sapiente odio aliquid corrupti, reiciendis possimus pariatur dolorem, obcaecati perferendis quisquam aspernatur quis temporibus! Laboriosam, itaque.</p>
         </div>
 
         <div class="cards">
             <h2>Meus Projetos</h2>
+            <img src="imagens/carro.jpg" alt="carro">
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem voluptates quia suscipit aut sapiente quaerat qui, debitis est eveniet id ipsa, nisi maxime, doloremque quis porro odit consequuntur. Debitis, sequi?</p>
         </div>
 
         <div class="cards">
             <h2>Meus Projetos</h2>
+            <img src="imagens/uno-de-escada.jpg" alt="Uno bolado">
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem voluptates quia suscipit aut sapiente quaerat qui, debitis est eveniet id ipsa, nisi maxime, doloremque quis porro odit consequuntur. Debitis, sequi?</p>
         </div>
     </section>
 
-    <section class="about-me" id="sobre">
+    <section class="about-me" id="about">
         <div class="sobre">
             <img src="imagens/Euzinho.jpg" alt="Euzinho">
             <h2>Sobre Mim</h2>
@@ -60,8 +69,45 @@
             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officiis placeat laborum maxime in. Eveniet cum distinctio a consequuntur omnis explicabo ducimus officiis nulla, modi sapiente incidunt quis ex, temporibus dolor.</p>
         </div>
     </section>
-  </main>
 
+    <section class="contact" id="contato">
+        <form class="form" action="" method="get" autocomplete="on" >
+            <h2>Entre em contato comigo</h2>
+
+            <div>
+                <label for="inome">Nome</label>
+                <p><input class="campo" type="text" name="nome" id="inome" required minlength="4" placeholder="Seu nome aqui"></p>
+            </div>
+
+            <div>
+                <label for="iemail">E-mail</label>
+                <p><input class="campo" type="email" name="email" id="iemail" required placeholder="Seu E-mail"></p>
+            </div>
+
+            <div>
+                <label for="inform">Deixe aqui sua solicitação.</label>
+                <p><textarea class="area" name="pedidos" id="inform" required minlength="20" maxlength="200" placeholder="Uma breve descrição da sua solicitação"></textarea></p>
+            </div>
+
+            <div>
+                <input class="btn" type="submit" value="Enviar">
+                <input class="btn" type="reset" value="Limpar">
+            </div>
+
+            <div class="outros">
+                <h3>Ou entre em contato pelas redes sociais!</h3>
+                <div>
+                    <a href="www.linkedin.com/in/gean-lucas-61415a3a1"><img src="imagens/iconeLinkedin.jpg" alt="Linkedin"></a>
+                    <a href="https://www.instagram.com/geanlxr/"><img src="imagens/logo-instagram.jpg" alt="Instagram"></a>
+                    <a href="https://github.com/ZergRJ"><img src="imagens/logo-github.jpg" alt="Github"></a>
+                </div>
+            </div>
+        </form>
+    </section>
+    <footer class="rodape">
+    <p>© 2026 - Gean Lucas (ZergRJ)</p>
+  </footer>
+  </main>
   <script src="script/script.js"></script>
 </body>
 </html>

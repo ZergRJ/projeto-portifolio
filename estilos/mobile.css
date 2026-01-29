@@ -1,0 +1,66 @@
+/* 📱 MOBILE */
+@media (max-width: 768px) {
+  body {
+    flex-direction: column;
+  }
+
+  .menu-btn {
+    display: block;
+    color: green;
+  }
+
+  .sidebar {
+    transform: translateX(-100%);
+    z-index: 1000;
+  }
+
+  .sidebar.active {
+    transform: translateX(0);
+  }
+
+  #content {
+    margin-left: 0px;
+    padding-top: 60px;
+  }
+
+  .content-text{
+    margin-left: 0px;
+  }
+  
+  .cards {
+    margin-left: 0px;
+  }
+
+  .cards img {
+    width: 100%;
+    max-width: 250px;
+    height: auto;
+  }
+
+  #projects {
+    flex-direction: column;
+    margin: 0px;
+  }
+  
+  #about .sobre {
+    margin: 0px;
+    text-align: center;
+  }
+
+  #contato {
+    margin-left: 0px;
+  }
+
+  .form{
+    color: black;
+    background-color: white;
+    min-height: 100vh;
+    border: none;
+    border-radius: 0px;
+  }
+
+  .form h2, .outros {
+    color: black;
+  }
+
+}

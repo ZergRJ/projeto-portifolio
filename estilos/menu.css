@@ -1,0 +1,29 @@
+@charset "UTF-8";
+/* MENU */
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 200px;
+  height: 100vh;
+  background: #0f0f0f;
+  color: white;
+  padding: 60px 20px 20px;
+  transition: transform 0.3s ease;
+}
+
+.logo {
+  margin-bottom: 30px;
+}
+
+.sidebar nav a {
+  display: block;
+  color: white;
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 6px;
+}
+
+.sidebar nav a:hover {
+  background: #272727;
+}
